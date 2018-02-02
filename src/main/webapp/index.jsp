@@ -38,7 +38,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				var str = $("#tel").val();
 				$.ajax({
    					type:"get",
-   					url:"http://localhost:8081/day05_work/service/s/find/"+str+"?_type=json",
+   					url:"http://localhost:8080/day05_work/service/s/find/"+str+"?_type=json",
 					datetype:"json",
    					success:function(d){
    						$("#msg").html("号码归属地为： "+d.mobilearea+"   "+d.mobiletype);
